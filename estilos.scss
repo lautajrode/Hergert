@@ -1,0 +1,155 @@
+$color1: #132e28;
+$color2: #fe9029;
+
+
+
+header {
+    margin: 0px;
+    padding: 0px;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    background-color: $color1;
+    flex-direction: row ;
+    justify-content: space-between ;
+    align-items: center;
+    @media (max-width: 992px) {
+        height: 240px;
+    }
+    .logo {
+        height: 120px;
+        width: 120px;
+    }
+    .navbar {
+        background-color: $color2;
+        border-radius: 5%;
+        height: 60px;
+        margin-right: 40px;
+        .navbar-collapse {
+            background-color: $color2;
+        }
+    }
+}
+.presentacion {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.presentacion__texto {
+    color:rgb(2, 2, 2);
+    text-align: center;
+    font-family: Cormorant Garamond, serif;
+    font-size: 1.1em;
+}
+.presentacion__texto--titulo {
+    color:black;
+    text-align: center;
+    font-family: Cormorant Garamond, serif;
+    font-size: 1.8em;
+}
+footer {
+    display: grid;
+    height: 150px;
+    width: 100%;
+    background-image: url(img/fondoFooterEdit.jpg);
+    background-size: cover;
+    background-position-y: 60%;
+    grid-template-columns: 60% 40%;
+    //.footer__logo {
+        height: 150px;
+        width: auto;
+    }
+    .footer__logo--redes {
+        text-align: center;
+        letter-spacing: 60px;
+        font-size: 30px;
+        justify-content: center;
+        margin: 60px;
+        $redes: (
+            red1: blue,
+            red2: orange,
+            red3: green);
+        @each $red, $color in $redes {
+            .icono--#{$red} {
+                color: $color;
+            }
+        }
+    }
+
+.servicios {
+    font-family: 'Cookie', cursive;
+    font-size: 2em;
+    .servicios__descripcion {
+        font-family: 'Cookie', cursive;
+        font-size: 1.2em;
+    }
+}
+.news {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    .noticia {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+    }
+    .noticia__bajada {
+        font-weight: lighter;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .noticia__link {
+        font-weight: lighter;
+        text-decoration-line: underline;
+    }
+}
+@for $i from 1 through 2 {
+    .noticia-#{$i} {
+        height:250px/$i}   
+}
+.ofertasEmpleos{
+    width: 100%;
+    
+}
+.ofertaLaboral{
+    width: 18rem;
+}
+@each $empleo in panadero , chofer , contador , jardinero {
+    .#{$empleo}-img {
+        width: 18rem;
+        height: 18rem;
+        border-radius: 5%;
+    }
+}
+
+
+#map {
+    margin: 10px
+    }
+
+//error404
+.bodyError {
+    margin: 0px;
+    padding: 0px;
+    background-color: #132e28;
+    width: 100%;
+}
+.cartaError404 {
+    width: 28rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgb(255, 255, 255);
+    background-clip: border-box;
+    border: 1px solid rgba(5, 5, 5, 0.04);
+    border-radius: .25rem;
+        .card-header {
+            background-color: #fff;
+            border-bottom: none;
+        }
+    }
+
+//footer nuevo prueba
+
+
+
+//sass --watch estilos.sass estilos.css
+// agregar bucles each mapas
