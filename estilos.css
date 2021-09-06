@@ -554,10 +554,23 @@ body {
 
 .ofertasEmpleos {
   width: 100%;
+  height: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .ofertaLaboral {
-  width: 18rem;
+  margin-left: 3rem;
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
+.imgEmpleos {
+  margin: 1rem;
 }
 
 .panadero-img {
