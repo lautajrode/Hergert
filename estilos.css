@@ -385,7 +385,7 @@ body {
 }
 
 .site-footer .social-icons {
-  text-align: right;
+  text-align: center;
 }
 
 .site-footer .social-icons a {
@@ -479,16 +479,12 @@ body {
   background-color: #3b5998;
 }
 
-.social-icons a.twitter:hover {
-  background-color: #00aced;
+.social-icons a.instagram:hover {
+  background-color: #cc6007;
 }
 
-.social-icons a.linkedin:hover {
-  background-color: #007bb6;
-}
-
-.social-icons a.dribbble:hover {
-  background-color: #ea4c89;
+.social-icons a.whatsapp:hover {
+  background-color: #4FCE5D;
 }
 
 @media (max-width: 767px) {
